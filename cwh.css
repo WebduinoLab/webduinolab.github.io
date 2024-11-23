@@ -3,8 +3,8 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #121212; /* Тёмный фон */
-    color: #ffffff; /* Светлый текст */
+    background-color: #121212; 
+    color: #ffffff; 
 }
 
 header {
@@ -31,18 +31,18 @@ nav ul li a {
 
 main {
     padding: 20px;
-    display: flex; /* Используем flexbox для размещения текста и изображения */
+    display: flex; 
 }
 
 section {
     margin-bottom: 20px;
-    flex: 2; /* Позволяет секциям занимать доступное пространство */
+    flex: 2; 
 }
 
 .image-container {
-    flex-shrink: 0; /* Не позволяет изображению сжиматься */
-    width: 300px; /* Ширина изображения */
-    margin-left: 20px; /* Отступ между текстом и изображением */
+    flex-shrink: 0; 
+    width: 300px; 
+    margin-left: 20px; 
 }
 
 footer {
