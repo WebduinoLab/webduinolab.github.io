@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta content="width=device-width, initial-scale=1.0">
+    <title>LayfiaStrategy.com</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>LayfiaStrategy</h1>
+        <div id="login-form">
+            <input type="text" id="country-name" placeholder="Название страны">
+            <select id="ideology">
+                <option value="communism">Коммунизм</option>
+                <option value="republicanism">Республиканство</option>
+                <option value="monarchism">Монархизм</option>
+                <option value="democracy">Демократия</option>
+                <option value="fascism">Фашизм</option>
+                <option value="imperialism">Империализм</option>
+            </select>
+            <input type="file" id="flag-upload" accept="image/*">
+            <button onclick="startGame()">Начать игру</button>
+        </div>
+
+        <div id="main-menu" style="display: none;">
+            <img id="country-flag" src="" alt="Флаг страны">
+            <h2 id="display-country-name"></h2>
+            <p>Население: <span id="population"></span></p>
+            <p>Экономика: <span id="economy"></span></p>
+            <p>Счастье: <span id="happiness"></span></p>
+            <button onclick="showInternalAffairs()">Внутренние дела страны</button>
+            <button onclick="showArmy()">Армия</button>
+        </div>
+
+        <div id="internal-affairs" style="display: none;">
+            <h3>Внутренние дела страны</h3>
+            <button onclick="buyFactory()">Купить завод (500 экономики)</button>
+            <button onclick="buyOilRig()">Купить нефтяную вышку (100 экономики)</button>
+            <button onclick="backToMainMenu()">Назад в меню</button>
+        </div>
+
+        <div id="army" style="display: none;">
+            <h3>Армия</h3>
+            <button onclick="buyTank()">Купить танк (200 экономики)</button>
+            <button onclick="buyShip()">Купить корабль (300 экономики)</button>
+            <button onclick="buySoldier()">Купить пехоту (100 экономики)</button>
+            <button onclick="backToMainMenu()">Назад в меню</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
